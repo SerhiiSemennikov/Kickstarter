@@ -1,0 +1,7 @@
+.mySlides2 {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
