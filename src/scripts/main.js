@@ -203,7 +203,7 @@ function showSlides() {
 
   dots[slideIndex - 1].className += ' active';
 
-setTimeout(showSlides, timeInterval);
+setTimeout(showSlides, 3000);
 
   if (window.innerWidth >= 744) {
     clearTimeout();
@@ -262,7 +262,8 @@ slides2.forEach((slide) => {
 
 
 if (window.innerWidth < 744) {
-  showSlides();
+
+   showSlides();
  }
 if (window.innerWidth < 1280) {
    for (let i = 0; i < slides2.length; i++) {
@@ -271,6 +272,8 @@ if (window.innerWidth < 1280) {
    }
   showSlides2(slideIndex2);
 }
+showSlides();
+showSlides2();
 showSlides3();
   if (window.innerWidth >= 1280) {
     for (let i = 0; i < slides2.length; i++) {
