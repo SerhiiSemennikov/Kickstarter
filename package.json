@@ -8,15 +8,15 @@
     "start": "mate-scripts start",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
-    "lint1": "npm run style-format && npm run format && mate-scripts lint",
+    "lint": "npm run style-format && npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only",
-    "lint": "eslint .js,.jsx",
-    "lint:fix": "eslint .js,.jsx --fix"
+    "lint1": "eslint .js,.jsx",
+    "lint1:fix": "eslint .js,.jsx --fix"
   },
   "keywords": [],
   "author": "Mate Academy",
